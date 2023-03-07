@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "port": 3306,
+  "admin": "marina",
+  "user": "ava",
+  "userpassword": "WYI3WAQf",
+  "dropUser": true,
+  "debug": true,
+  "database": "gamesdb",
+  "allowPublicKeyRetrieval": true,
+  "tables": [
+    {
+      "tableName": "game",
+      "columns": [
+        "number integer not null primary key",
+        "name varchar(34) not null",
+        "quantity integer not null",
+        "year integer not null",
+        "genre varchar(16) not null"
+      ],
+      "data": [
+        [1, "Jigsaw puzzle", "13", "2005", "platformer"],
+        [2, "Future 2525", "150", "2017", "adventure"],
+        [3, "Amnesia 2030", "1", "2000", "strategy"],
+        [4, "Star Adventure", "25", "1995", "FSP"],
+        [5, "Ladybirds", "30", "2015", "brain-teaser"],
+        [6, "The Rise and Fall of an Empire 22", "10", "2012", "board game"],
+        [7, "U.F.O", "5", "2011", "brain-twister"]
+      ]
+    }
+  ]
+}
