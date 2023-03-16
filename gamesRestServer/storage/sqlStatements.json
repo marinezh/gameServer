@@ -7,9 +7,9 @@
   ],
   "update": [
     "update game set name=?, type=?, processor=?, amount=?",
-    "where id=?"
+    "where number=?"
   ],
-  "remove": ["delete from game where id=?"],
-  "primaryKey": "id",
-  "resource": "computers"
+  "remove": ["delete from game where number=?"],
+  "primaryKey": "number",
+  "resource": "games"
 }
