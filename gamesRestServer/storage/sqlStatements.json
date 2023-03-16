@@ -1,0 +1,15 @@
+{
+  "getAll": ["select number,name,quantity,year,genre from game"],
+  "get": ["select number,name,quantity,year,genre from game", "where number=?"],
+  "insert": [
+    "insert into game (number,name,quantity,year,genre)",
+    "values(?,?,?,?,?)"
+  ],
+  "update": [
+    "update game set name=?, type=?, processor=?, amount=?",
+    "where id=?"
+  ],
+  "remove": ["delete from game where id=?"],
+  "primaryKey": "id",
+  "resource": "computers"
+}
