@@ -103,11 +103,11 @@ module.exports = class Datastorage {
           resolve(MESSAGES.NOT_UPDATED());
         }
       } catch (err) {
-        console.log(err); //for debugging
+        console.log(err);
         reject(MESSAGES.PROGRAM_ERROR());
       }
     });
-  } //end of update
+  } // END OF UPDATE
 
   remove(key) {
     return new Promise(async (resolve, reject) => {

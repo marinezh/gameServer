@@ -6,7 +6,7 @@
     "values(?,?,?,?,?)"
   ],
   "update": [
-    "update game set name=?, type=?, processor=?, amount=?",
+    "update game set name=?, quantity=?, year=?, genre=?",
     "where number=?"
   ],
   "remove": ["delete from game where number=?"],

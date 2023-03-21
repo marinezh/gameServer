@@ -97,10 +97,10 @@
       } else {
         //put game
         const game = {
-          number: numberField.value,
+          number: +numberField.value,
           name: nameField.value,
-          quantity: quantityField.value,
-          year: yearField.value,
+          quantity: +quantityField.value,
+          year: +yearField.value,
           genre: genreField.value,
         };
 
