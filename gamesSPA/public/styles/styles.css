@@ -7,24 +7,22 @@ body {
   background-image: url("../assets/pexels-pixabay-159393.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
   background-position: 50% 50%;
   height: 100vh;
 }
 
 .container {
   margin: 100px 0 0 50px;
+  padding: 1rem 3rem 1rem 3rem;
   position: relative;
   width: fit-content;
-  /* width: 300px;
-  height: 400px; */
-  padding: 1rem 2rem 1rem 2rem;
   background-color: rgba(247, 243, 243, 0.3);
   color: #fff;
-
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  align-items: center;
   padding-bottom: 3rem;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -39,7 +37,7 @@ body {
 
 h1 {
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   background: linear-gradient(101deg, #1bfd9c, #1164be);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -111,4 +109,39 @@ td {
 
 thead {
   background-image: linear-gradient(101deg, #1bfd9c, #1164be);
+}
+
+.fields {
+  display: grid;
+  gap: 1rem;
+}
+
+.fields div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  height: 1.5rem;
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 5px;
+}
+
+.legend {
+  font-style: italic;
+  color: silver;
+  font-weight: 400;
+}
+
+.info {
+  border: solid silver 2px;
+  padding: 1em;
+}
+
+.error {
+  border: dashed red 2px;
+  padding: 2em;
 }

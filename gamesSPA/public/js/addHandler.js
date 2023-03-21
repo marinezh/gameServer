@@ -28,7 +28,7 @@
       name: nameField.value,
       quantity: +quantityField.value,
       year: +yearField.value,
-      genre: +genreField.value,
+      genre: genreField.value,
     };
 
     try {
